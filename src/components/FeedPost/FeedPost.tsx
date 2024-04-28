@@ -10,6 +10,7 @@ import Comment from '../Comment';
 import { IPost } from '../../types/models';
 import { useState } from 'react';
 import DoublePressable from '../DoublePressable';
+import Carousel from '../Carousel';
 
 interface IFeedPost {
     post: IPost;
@@ -27,6 +28,19 @@ const FeedPost = ({ post } : IFeedPost) => {
     setIsLiked(v => !v);
   }
  
+  let content = null;
+  if(post.image){
+    content = (
+      <DoublePressable onDoublePress={toggleIsLiked}>
+        <Image 
+          source={{uri: post.image}} 
+          style={styles.image} 
+        />
+      </DoublePressable>
+    );
+  }else if(post.images){
+    content = <Carousel images={post.images} onDoublePress={toggleIsLiked}/>
+  }
   return (
 
     <View style={styles.post}>
@@ -40,13 +54,8 @@ const FeedPost = ({ post } : IFeedPost) => {
       <Entypo name='dots-three-horizontal' size={16} style={styles.threeDots}/>
      </View>
 
-     {/* Content */}
-      <DoublePressable onDoblePress={toggleIsLiked}>
-        <Image 
-          source={{uri: post.image}} 
-          style={styles.image} 
-        />
-      </DoublePressable>
+     {/* Content */}     
+      {content}
 
      {/* Footer */}
      <View style={styles.footer}>

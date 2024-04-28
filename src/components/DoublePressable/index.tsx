@@ -2,16 +2,16 @@ import React, { ReactNode } from 'react'
 import { Pressable, Text } from 'react-native';
 
 interface IDoublePressable {
-  onDoblePress?: () => void;
+  onDoublePress?: () => void;
   children: ReactNode;
 }
 
-const DoublePressable = ({onDoblePress = () => {}, children}: IDoublePressable) => {
+const DoublePressable = ({onDoublePress = () => {}, children}: IDoublePressable) => {
   let lastTap = 0;
   const handleDoublePress = () => {
     const now = Date.now(); //timestamp 234567 in millisecond
     if(now - lastTap < 300){
-      onDoblePress();
+      onDoublePress();
     }
     lastTap = now;
   }
