@@ -1,21 +1,27 @@
 /* prettier-ignore */
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Image, Text, View } from 'react-native';
 import colors from '../../theme/colors';
-import fonts from '../../theme/fonts';
 import Entypo from 'react-native-vector-icons/Entypo';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Feather from 'react-native-vector-icons/Feather';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from './styles';
+import Comment from '../Comment';
+import { IPost } from '../../types/models';
 
-const FeedPost = () => {
+interface IFeedPost {
+    post: IPost;
+}
+
+const FeedPost = ({ post } : IFeedPost) => {
+  console.log('props', post);
   return (
 
     <View style={styles.post}>
      {/* Header  */}
      <View style={styles.header}>
       <Image 
-        source={{uri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg'}}
+        source={{uri: post.user.image}}
         style={styles.userAvatar} 
       />
       <Text style={styles.userName}>trai</Text>
@@ -24,7 +30,7 @@ const FeedPost = () => {
 
      {/* Content */}
     <Image 
-      source={{uri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg'}} 
+      source={{uri: post.image}} 
       style={styles.image} 
     />
 
@@ -59,25 +65,22 @@ const FeedPost = () => {
       <Text style={styles.text}>
         Liked by {''}
         <Text style={styles.bold}>rai</Text> and{' '}
-        <Text style={styles.bold}>66 others</Text>
+        <Text style={styles.bold}>{post.nofLikes} others</Text>
       </Text>
       {/* Post Description */}
       <Text style={styles.text}>
-        <Text style={styles.bold}>trai</Text>{' '}
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, similique mollitia. Quod sunt accusantium velit ea repellendus veniam assumenda ab incidunt minima aliquid quis, sit eveniet repellat, tempora eligendi aliquam.
+        <Text style={styles.bold}>{post.user.username}</Text>{' '}
+        {post.description}
       </Text>
 
       {/* Comments */}
-      <Text>View all 16 comments</Text>
-      <View style={styles.comment}>
-        <Text style={styles.commentText}>
-          <Text style={styles.bold}>trai</Text>{' '}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </Text>
-        <AntDesign name={'hearto'} style={styles.icon} color={colors.black}/>
-      </View>
+      <Text>View all {post.nofComments} comments</Text>
+      {post.comments.map(comment => (
+        <Comment key={comment.id}  comment={comment}/>
+      ))}
+      
       {/* Posted Date */}
-      <Text>26 April, 2024</Text>
+      <Text>{post.createdAt}</Text>
      </View>
      
     </View>
