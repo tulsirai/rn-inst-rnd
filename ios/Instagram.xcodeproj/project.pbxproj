@@ -10,29 +10,8 @@
 		00E356F31AD99517003FC87E /* InstagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* InstagramTests.m */; };
 		0C80B921A6F3F58F76C31292 /* libPods-Instagram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-Instagram.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
-		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		35A6BC8F2BDDD30D0018C3A5 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A6BC7B2BDDD30D0018C3A5 /* AntDesign.ttf */; };
-		35A6BC902BDDD30D0018C3A5 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A6BC7C2BDDD30D0018C3A5 /* Entypo.ttf */; };
-		35A6BC912BDDD30D0018C3A5 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A6BC7D2BDDD30D0018C3A5 /* EvilIcons.ttf */; };
-		35A6BC922BDDD30D0018C3A5 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A6BC7E2BDDD30D0018C3A5 /* Feather.ttf */; };
-		35A6BC932BDDD30D0018C3A5 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A6BC7F2BDDD30D0018C3A5 /* FontAwesome.ttf */; };
-		35A6BC942BDDD30D0018C3A5 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A6BC802BDDD30D0018C3A5 /* FontAwesome5_Brands.ttf */; };
-		35A6BC952BDDD30D0018C3A5 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A6BC812BDDD30D0018C3A5 /* FontAwesome5_Regular.ttf */; };
-		35A6BC962BDDD30D0018C3A5 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A6BC822BDDD30D0018C3A5 /* FontAwesome5_Solid.ttf */; };
-		35A6BC972BDDD30D0018C3A5 /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A6BC832BDDD30D0018C3A5 /* FontAwesome6_Brands.ttf */; };
-		35A6BC982BDDD30D0018C3A5 /* FontAwesome6_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A6BC842BDDD30D0018C3A5 /* FontAwesome6_Regular.ttf */; };
-		35A6BC992BDDD30D0018C3A5 /* FontAwesome6_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A6BC852BDDD30D0018C3A5 /* FontAwesome6_Solid.ttf */; };
-		35A6BC9A2BDDD30D0018C3A5 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A6BC862BDDD30D0018C3A5 /* Fontisto.ttf */; };
-		35A6BC9B2BDDD30D0018C3A5 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A6BC872BDDD30D0018C3A5 /* Foundation.ttf */; };
-		35A6BC9C2BDDD30D0018C3A5 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A6BC882BDDD30D0018C3A5 /* Ionicons.ttf */; };
-		35A6BC9D2BDDD30D0018C3A5 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A6BC892BDDD30D0018C3A5 /* MaterialCommunityIcons.ttf */; };
-		35A6BC9E2BDDD30D0018C3A5 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A6BC8A2BDDD30D0018C3A5 /* MaterialIcons.ttf */; };
-		35A6BC9F2BDDD30D0018C3A5 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A6BC8B2BDDD30D0018C3A5 /* Octicons.ttf */; };
-		35A6BCA02BDDD30D0018C3A5 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A6BC8C2BDDD30D0018C3A5 /* SimpleLineIcons.ttf */; };
-		35A6BCA12BDDD30D0018C3A5 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A6BC8D2BDDD30D0018C3A5 /* Zocial.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-Instagram-InstagramTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Instagram-InstagramTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -247,7 +226,6 @@
 				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
-				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
@@ -302,34 +280,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		13B07F8E1A680F5B00A75B9A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35A6BC8F2BDDD30D0018C3A5 /* AntDesign.ttf in Resources */,
-				35A6BC942BDDD30D0018C3A5 /* FontAwesome5_Brands.ttf in Resources */,
-				35A6BC932BDDD30D0018C3A5 /* FontAwesome.ttf in Resources */,
-				35A6BC902BDDD30D0018C3A5 /* Entypo.ttf in Resources */,
-				35A6BC922BDDD30D0018C3A5 /* Feather.ttf in Resources */,
-				35A6BC992BDDD30D0018C3A5 /* FontAwesome6_Solid.ttf in Resources */,
-				35A6BC9B2BDDD30D0018C3A5 /* Foundation.ttf in Resources */,
-				35A6BC9A2BDDD30D0018C3A5 /* Fontisto.ttf in Resources */,
-				35A6BC962BDDD30D0018C3A5 /* FontAwesome5_Solid.ttf in Resources */,
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				35A6BC9C2BDDD30D0018C3A5 /* Ionicons.ttf in Resources */,
-				35A6BC952BDDD30D0018C3A5 /* FontAwesome5_Regular.ttf in Resources */,
-				35A6BC912BDDD30D0018C3A5 /* EvilIcons.ttf in Resources */,
-				35A6BCA12BDDD30D0018C3A5 /* Zocial.ttf in Resources */,
-				35A6BC9D2BDDD30D0018C3A5 /* MaterialCommunityIcons.ttf in Resources */,
-				35A6BC9E2BDDD30D0018C3A5 /* MaterialIcons.ttf in Resources */,
-				35A6BC972BDDD30D0018C3A5 /* FontAwesome6_Brands.ttf in Resources */,
-				35A6BC9F2BDDD30D0018C3A5 /* Octicons.ttf in Resources */,
-				35A6BCA02BDDD30D0018C3A5 /* SimpleLineIcons.ttf in Resources */,
-				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				35A6BC982BDDD30D0018C3A5 /* FontAwesome6_Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
