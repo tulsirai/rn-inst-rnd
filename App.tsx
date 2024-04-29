@@ -1,20 +1,21 @@
 /* prettier-ignore */
-import { StyleSheet, View } from 'react-native';
+import { SafeAreaView, StyleSheet, View } from 'react-native';
 import HomeScreen from './src/screens/HomeScreen';
 import CommentsScreen from './src/screens/CommentsScreen/CommentsScreen';
 
 const App = () => {
   return (
 
-    <View style={styles.app}>
+    <SafeAreaView style={styles.app}>
+     {/* <HomeScreen /> */}
      <CommentsScreen />
-    </View>
+    </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
   app: {
-
+    flex: 1,
   },  
 })
 

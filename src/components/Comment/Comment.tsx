@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, Pressable } from 'react-native'
+import { View, Text, StyleSheet, Image, Pressable, SafeAreaView } from 'react-native'
 import React, { useState } from 'react'
 import colors from '../../theme/colors';
 import fonts from '../../theme/fonts';
@@ -57,8 +57,8 @@ const styles = StyleSheet.create({
     },
     comment: {
       flexDirection: 'row',
-      alignItems: 'center',
-      
+      alignItems: 'center',   
+      borderBlockColor: 'red'   
     },
     commentText: {
       color: colors.black,
