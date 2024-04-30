@@ -1,7 +1,7 @@
 /* prettier-ignore */
 import { FlatList, ViewabilityConfig, ViewToken } from 'react-native';
-import FeedPost from './../components/FeedPost';
-import posts from './../assets/data/posts.json';
+import FeedPost from '../../components/FeedPost';
+import posts from '../../assets/data/posts.json';
 import { useRef, useState } from 'react';
 
 const HomeScreen = () => {

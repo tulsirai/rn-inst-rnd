@@ -1,8 +1,9 @@
 /* prettier-ignore */
 import { SafeAreaView, StyleSheet, View } from 'react-native';
-import HomeScreen from './src/screens/HomeScreen';
+import HomeScreen from './src/screens/HomeScreen/HomeScreen';
 import CommentsScreen from './src/screens/CommentsScreen/CommentsScreen';
 import ProfileScreen from './src/screens/ProfileScreen/ProfileScreen';
+import EditProfileScreen from './src/screens/EditProfileScreen';
 
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
     <SafeAreaView style={styles.app}>
      {/* <HomeScreen /> */}
      {/* <CommentsScreen /> */}
-     <ProfileScreen />
+     {/* <ProfileScreen /> */}
+     <EditProfileScreen />
     </SafeAreaView>
   );
 };
