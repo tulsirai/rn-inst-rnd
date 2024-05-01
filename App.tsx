@@ -1,19 +1,17 @@
 /* prettier-ignore */
-import { SafeAreaView, StyleSheet, View } from 'react-native';
-import HomeScreen from './src/screens/HomeScreen/HomeScreen';
-import CommentsScreen from './src/screens/CommentsScreen/CommentsScreen';
-import ProfileScreen from './src/screens/ProfileScreen/ProfileScreen';
-import EditProfileScreen from './src/screens/EditProfileScreen';
+import { SafeAreaView, StyleSheet, } from 'react-native';
+// import HomeScreen from './src/screens/HomeScreen/HomeScreen';
+// import CommentsScreen from './src/screens/CommentsScreen/CommentsScreen';
+// import ProfileScreen from './src/screens/ProfileScreen/ProfileScreen';
+// import EditProfileScreen from './src/screens/EditProfileScreen';
+// import { NavigationContainer } from '@react-navigation/native';
+import Navigation from './src/navigation';
 
 const App = () => {
   return (
-
     <SafeAreaView style={styles.app}>
-     {/* <HomeScreen /> */}
-     {/* <CommentsScreen /> */}
-     {/* <ProfileScreen /> */}
-     <EditProfileScreen />
-    </SafeAreaView>
+      <Navigation />
+   </SafeAreaView>
   );
 };
 
