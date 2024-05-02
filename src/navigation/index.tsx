@@ -5,7 +5,7 @@ import HomeScreen from '../screens/HomeScreen';
 import CommentsScreen from '../screens/CommentsScreen/CommentsScreen';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import ProfileScreen from '../screens/ProfileScreen';
-import { Image, Platform, StyleSheet, View } from 'react-native';
+import { Image, StyleSheet } from 'react-native';
 import logo from '../assets/images/logo.png';
 
 const  Stack = createNativeStackNavigator();
@@ -16,17 +16,23 @@ const Navigation = () => {
       <Stack.Navigator
         initialRouteName='Feed'
         screenOptions={{
-          header: CustomHeader,
-          headerShown: true,
-        }}>
+          headerShown: true
+        }}      
+        >
         <Stack.Screen 
           name='Feed' 
           component={HomeScreen}
+          options={{
+            headerTitle: HeaderTitle , 
+            headerTitleAlign: 'center',
+          }}
         />
         <Stack.Screen 
           name='UserProfile' 
           component={ProfileScreen} 
-          options={{ title: 'Profile' }}
+          options={{
+             title: 'Profile',
+          }}
         />
       </Stack.Navigator>
     </NavigationContainer>
@@ -34,21 +40,13 @@ const Navigation = () => {
 };
 
 
-const CustomHeader = ()  =>{
+const HeaderTitle = ()  =>{
   return (
-    <View style={styles.headerContainer}>
-      <Image source={logo} style={styles.logo} resizeMode="contain" />
-    </View>
+      <Image source={logo} style={styles.logo} resizeMode='contain' />   
   );
 }
 
-const styles = StyleSheet.create({
-  headerContainer: {
-    height: 60,  
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingTop: Platform.OS === 'ios' ? 2 : 0,  
-  },
+const styles = StyleSheet.create({  
   logo: {
     width: 150,
     height: 40,

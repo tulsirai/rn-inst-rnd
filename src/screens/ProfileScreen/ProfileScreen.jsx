@@ -4,6 +4,7 @@ import ProfileHeader from './ProfileHeader';
 import FeedGridView from '../../components/FeedGridView';
 
 const ProfileScreen = () => {
+
   return(   
     <FeedGridView 
       data={user.posts}

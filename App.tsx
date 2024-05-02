@@ -1,4 +1,5 @@
 /* prettier-ignore */
+import React from 'react';
 import { SafeAreaView, StyleSheet, } from 'react-native';
 // import HomeScreen from './src/screens/HomeScreen/HomeScreen';
 // import CommentsScreen from './src/screens/CommentsScreen/CommentsScreen';
@@ -9,9 +10,7 @@ import Navigation from './src/navigation';
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.app}>
-      <Navigation />
-   </SafeAreaView>
+   <Navigation />
   );
 };
 
